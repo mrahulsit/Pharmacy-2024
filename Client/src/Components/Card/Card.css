@@ -1,0 +1,42 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 40dvw;
+    box-shadow: none;
+    margin: 1dvh; 
+    text-align: center;
+  }
+  
+  .card-image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 600px) {
+    .card {
+      max-width: 30dvw; /* Adjusting for larger screens */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .card {
+      max-width: 20dvw; /* Adjusting for even larger screens */
+    }
+  }
+  
+
+  /* App.css or global CSS file */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2dvw; /* Using dvw for gap */
+    padding: 2dvh 2dvw; /* Using dvh and dvw for padding */
+    margin: 0 auto;
+  }
+  

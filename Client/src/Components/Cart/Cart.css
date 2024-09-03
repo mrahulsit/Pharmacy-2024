@@ -1,0 +1,22 @@
+.main {
+  text-align: center;
+}
+
+.cart {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cart-item h5,
+.cart-item h6 {
+  margin: 0;
+}

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav.border-0.w-100 {
+  background-color: #fff;
+  padding: 0.2em 3em;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.303);
+}
+
+div.container-fluid {
+  padding: 0;
+}
+.item-text-color {
+  color: #0b0705;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 2dvw;
+}
+.flex-slogan {
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  justify-content: center;
+  height: 5vh;
+  width: 6.5em;
+}
+.flex-slogan > div:nth-child(1) {
+  font-size: 20pt;
+  color: #1ab04b;
+  font-weight: 700;
+}
+.flex-slogan > div:nth-child(2) {
+  font-size: 12pt;
+  color: #095723;
+  font-weight: 600;
+}
+.divider {
+  height: 2.5em;
+  border-right: 3px solid rgba(128, 128, 128, 0.432);
+}
+.cart-name {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.cart-name:hover {
+  border-bottom: 2px solid white;
+}
+.download-box {
+  background-color: #04ad994c;
+  padding: 0.5em 0.8em;
+  border-radius: 10px;
+  align-items: center;
+}
+.margin-navbar {
+  margin-left: 30em;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
+}
+.horizontal-line {
+  border-left: 3px solid white;
+  height: 3rem;
+  margin-left: 0.5dvw;
+}
+
+.small-nav {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0;
+  margin-bottom: 2em;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  top: 4.15em;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.link-item {
+  color: black;
+  font-weight: 500;
+  position: static;
+}
+/* Medium screen and up */
+@media (width <= 768px) {
+  .link-item {
+    margin: 10px;
+  }
+}
+
+/* Large screen and up */
+@media (width <= 992px) {
+  .linktag {
+    justify-content: space-between;
+  }
+  .link-item {
+    margin: 30px;
+  }
+}
+/* Extra large screen and up */
+@media (width >= 1200px) {
+  .linktag {
+    justify-content: space-between;
+  }
+  .link-item {
+    margin: 10px;
+  }
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (width <= 767px) {
+  .linktag {
+    margin-top: 5vh;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Mobile devices (portrait) */
+@media (width <= 480px) {
+  .container-fluid {
+    margin: 0;
+  }
+  .small-nav {
+    position: relative;
+  }
+  .logo {
+    width: 2.2em;
+    height: 2.2em;
+  }
+  .flex-slogan {
+    width: 100%;
+  }
+  .flex-slogan > div:nth-child(1) {
+    font-size: 15pt;
+  }
+  .flex-slogan > div:nth-child(2) {
+    font-size: 10pt;
+  }
+  .divider {
+    display: none;
+  }
+  nav.border-0.w-100 {
+    padding: 0 0.5em;
+  }
+}

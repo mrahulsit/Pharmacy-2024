@@ -1,0 +1,177 @@
+.divider-footer {
+  width: 88em;
+  padding: 0.5em 1em;
+  margin: 1.5em 3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+#bot3 {
+  background-color: rgb(244, 247, 251);
+  width: 100%;
+}
+.follow {
+  width: 100%;
+  color: #006e69;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 3.5em;
+  margin-top: 1.5em;
+}
+.follow > div > span {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.follow > div > p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+#letter {
+  padding: 0.5em;
+  width: 25em;
+  font-size: medium;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #1c8580;
+}
+.follow > div > button {
+  width: 40%;
+  padding: 0.5em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #096c67;
+  color: #fff;
+}
+#newsletter {
+  display: flex;
+  gap: 0.5em;
+}
+
+.logo-div {
+  margin-top: 4em;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.2em;
+  position: absolute;
+  padding-left: 1em;
+}
+.logo-div > .logoImage {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 35px;
+}
+.logo-div > .logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  line-height: 1.2em;
+  width: 20em;
+}
+.logo-text > div:nth-child(1) {
+  font-size: 35pt;
+  color: #1ab04b;
+  font-weight: 700;
+}
+.logo-text > div:nth-child(2) {
+  font-size: 27pt;
+  color: #095723;
+  font-weight: 600;
+}
+/* .hindi-slogan {
+  color: #1c8580;
+  font-weight: 600;
+  font-size: 1em;
+  width: 25%;
+} */
+
+.textInfo {
+  color: #068f66;
+  font-weight: 600;
+  font-size: 1.15em;
+  position: relative;
+  right: 30%;
+  top: 5.5em;
+  width: 28%;
+  text-align: justify;
+}
+
+#b3first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  right: 2em;
+}
+
+#feat {
+  color: rgb(65, 85, 91);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  margin-top: 2em;
+}
+
+#feat > div {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#b3first p {
+  color: rgb(106, 117, 124);
+  line-height: 1.1;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#b3first h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#b3sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+}
+.downside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em 3em;
+}
+.downside > .connect {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+#copy {
+  text-align: left;
+  color: #10847e;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#feat p:hover {
+  color: rgb(16, 132, 126);
+}
+
+@media (width <= 480px) {
+  #b3first,
+  #b3sec {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #copy {
+    text-align: center;
+    padding-top: 2rem;
+  }
+}

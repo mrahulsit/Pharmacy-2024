@@ -1,0 +1,48 @@
+.order-text {
+  margin: 1em 0;
+}
+.container-home {
+  padding: 0em 13em;
+}
+a {
+  text-decoration: none;
+}
+.content-box {
+  width: 43em;
+  height: 13em;
+  background-color: rgb(11, 134, 124);
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+.info-text {
+  display: flex;
+  justify-content: first baseline;
+  gap: 1.5em;
+  margin-bottom: 3.5em;
+  color: #fff;
+}
+.search-text {
+  color: #fff;
+  font-weight: 700;
+}
+.pincode-button {
+  width: 100%;
+  padding: 0.3em;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  color: rgb(11, 134, 124);
+  border-radius: 0.4em;
+  font-weight: 700;
+  font-size: larger;
+}
+.search-bar {
+  width: 65%;
+  padding: 0.5em;
+  border: none;
+  font-size: medium;
+  border-radius: 0.5em;
+  outline: none;
+}
+.search-bar:active {
+  border: none;
+}
