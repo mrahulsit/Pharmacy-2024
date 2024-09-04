@@ -33,6 +33,7 @@
   padding: 0.4em;
   border: none;
   border-radius: 0.5em;
+  color: black;
 }
 .flex-order {
   display: flex;

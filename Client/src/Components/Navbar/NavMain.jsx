@@ -17,7 +17,7 @@ import MenuIcon from "@rsuite/icons/Menu";
 import { useState, useEffect } from "react";
 import { Icon } from "@rsuite/icons";
 import { FaUser } from "react-icons/fa";
-import { Modal, Button, ButtonToolbar, Placeholder } from "rsuite";
+import { Modal, Button } from "rsuite";
 
 function NavMain() {
   const [username, setUsername] = useState("");
@@ -89,11 +89,11 @@ function NavMain() {
               <Nav.Item>
                 <Dropdown
                   renderToggle={renderToggle}
-                  placement="bottomEnd"
+                  placement="bottomStart"
                   trigger="hover"
                 >
                   {username ? (
-                    <>
+                    <div style={{ width: 140, textAlign: "center" }}>
                       <Dropdown.Item>My Profile</Dropdown.Item>
                       <Dropdown.Item>My Orders</Dropdown.Item>
                       <Dropdown.Separator />
@@ -102,13 +102,19 @@ function NavMain() {
                       <Dropdown.Item onClick={handleOpenModal}>
                         Sign Out
                       </Dropdown.Item>
-                    </>
+                    </div>
                   ) : (
                     <>
-                      <Dropdown.Item onClick={() => navigate("/login")}>
+                      <Dropdown.Item
+                        style={{ width: 140, textAlign: "center" }}
+                        onClick={() => navigate("/login")}
+                      >
                         Log In
                       </Dropdown.Item>
-                      <Dropdown.Item onClick={() => navigate("/login")}>
+                      <Dropdown.Item
+                        style={{ width: 140, textAlign: "center" }}
+                        onClick={() => navigate("/login")}
+                      >
                         Sign Up
                       </Dropdown.Item>
                     </>
@@ -137,29 +143,41 @@ function NavMain() {
               </Nav.Item>
               <Dropdown title="Menu" placement="bottomEnd">
                 <Dropdown.Item>
-                  <Link to="/medicine" className="link-item">
+                  <span
+                    onClick={() => navigate("/medicine")}
+                    className="link-item"
+                  >
                     Medicine
-                  </Link>
+                  </span>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link to="/healthcare" className="link-item">
+                  <span
+                    onClick={() => navigate("/healthcare")}
+                    className="link-item"
+                  >
                     HealthCare
-                  </Link>
+                  </span>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link to="/plus" className="link-item">
+                  <span onClick={() => navigate("/plus")} className="link-item">
                     PLUS
-                  </Link>
+                  </span>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link to="/offers" className="link-item">
+                  <span
+                    onClick={() => navigate("/offers")}
+                    className="link-item"
+                  >
                     Offers
-                  </Link>
+                  </span>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link to="/valuestore" className="link-item">
+                  <span
+                    onClick={() => navigate("/valuestore")}
+                    className="link-item"
+                  >
                     Value Store
-                  </Link>
+                  </span>
                 </Dropdown.Item>
               </Dropdown>
             </div>
@@ -191,29 +209,44 @@ function NavMain() {
                 </Nav.Item>
                 <Dropdown renderToggle={renderIconButton} placement="bottomEnd">
                   <Dropdown.Item>
-                    <Link to="/medicine" className="link-item">
+                    <span
+                      onClick={() => navigate("/medicine")}
+                      className="link-item"
+                    >
                       Medicine
-                    </Link>
+                    </span>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="/healthcare" className="link-item">
+                    <span
+                      onClick={() => navigate("/healthcare")}
+                      className="link-item"
+                    >
                       HealthCare
-                    </Link>
+                    </span>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="/plus" className="link-item">
+                    <span
+                      onClick={() => navigate("/plus")}
+                      className="link-item"
+                    >
                       PLUS
-                    </Link>
+                    </span>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="/offers" className="link-item">
+                    <span
+                      onClick={() => navigate("/offers")}
+                      className="link-item"
+                    >
                       Offers
-                    </Link>
+                    </span>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="/valuestore" className="link-item">
+                    <span
+                      onClick={() => navigate("/valuestore")}
+                      className="link-item"
+                    >
                       Value Store
-                    </Link>
+                    </span>
                   </Dropdown.Item>
                 </Dropdown>
               </Nav>
